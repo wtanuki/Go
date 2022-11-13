@@ -16,7 +16,6 @@ func Atoi(s string) int {
 	signe := 1
 
 	if len(s) > 0 {
-
 		switch s[0] {
 		case '+':
 			rune_s = rune_s[1:]
@@ -28,7 +27,6 @@ func Atoi(s string) int {
 		}
 
 	}
-
 	res = BasicAtoi2(string(rune_s)) * signe
 	return res
 }
